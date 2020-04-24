@@ -1,4 +1,5 @@
 ## QUESTION 1
+require 'pry'
 
 pokemon = [
   {
@@ -67,3 +68,17 @@ pokemon = [
 # How would you return an array of all of the pokemon's names?
 # How would you determine whether or not the pokemon array contained any pokemon with a weight greater than 60?
 #  whatever method you use should return true if there are any such pokemon, false if not.
+
+def find_url
+{“ability” => :ability}
+pokemon.each do |key, value|
+    binding.pry
+    if key == "bulbasaur"
+        key[:abilities].each do |k, v|
+            v
+            end
+        end
+    end
+end
+
+find_url
